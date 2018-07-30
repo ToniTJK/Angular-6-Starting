@@ -1,8 +1,8 @@
-import { Pipe, PipeTranform } from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({ name: 'conversor' })
 
-export class ConversorPipe implements PipeTranform{
+export class ConversorPipe implements PipeTransform{
   transform(value, por){
     let value_one = parseInt(value);
     let value_two = parseInt(por);

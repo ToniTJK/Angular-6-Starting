@@ -1,3 +1,6 @@
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { routing, appRoutingProviders } from './app.routing';
@@ -17,6 +20,7 @@ import { CochesComponent } from './coches/coches.component';
     AppComponent,
     FrutaComponent,
     EmpleadoComponent,
+    ConversorPipe,
     HomeComponent,
     ContactoComponent,
     ConversorPipe,
@@ -25,7 +29,9 @@ import { CochesComponent } from './coches/coches.component';
   imports: [
     BrowserModule,
     FormsModule,
-    routing
+    routing,
+    HttpClientModule,
+    HttpModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
